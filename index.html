@@ -297,7 +297,7 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 <script>
 async function initialize(idToken){
-  const backendUrl="https://epic-education.onrender.com";
+  const backendUrl="https://epic-eudcation.onrender.com";
   const embedUrl="https://app.powerbi.com/reportEmbed?reportId=262428bf-7d0f-431f-96bb-6bee8340caf5&groupId=a7dd1400-598f-41ce-be83-2c7794794996&w=2&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLUNBTkFEQS1DRU5UUkFMLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0IiwiZW1iZWRGZWF0dXJlcyI6eyJ1c2FnZU1ldHJpY3NWTmV4dCI6dHJ1ZX19";
   let embedToken=null;
   async function fetchAuthToken(){const r=await fetch(`${backendUrl}/auth-token`,{method:'POST',headers:{'Content-Type':'application/json'}});const d=await r.json();return d.access_token;}
